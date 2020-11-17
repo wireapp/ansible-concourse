@@ -69,6 +69,8 @@ concourse_worker_options_default             :
 concourseci_web_group                       : "concourse-web"
 concourseci_worker_group                    : "concourse-worker"
 
+concourseci_web_resource_type_defaults      : { }
+
 ## Management
 concourseci_manage_url                      : "{{ concourse_web_options_combined['CONCOURSE_EXTERNAL_URL'] | default('http://127.0.0.1:8080') }}"
 
